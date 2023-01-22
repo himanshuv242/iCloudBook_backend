@@ -6,6 +6,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.json())//Middle ware to use req.body at endpoint
+
 //Available Routes
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
