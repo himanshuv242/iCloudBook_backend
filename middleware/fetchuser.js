@@ -9,7 +9,7 @@ const fetchuser = (req, res, next) => {
   try {
     const data = jwt.verify(token, JWT_SECRET);
     req.user = data.user;
-    next();
+    next();// Used to operate next function in this router router.post("/getuser", fetchuser, async (req, res)
   } catch (error) {
     res.status(401).send({ error: "Please authenticate usng a valid token" });
   }
