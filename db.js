@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoURI = "mongodb://localhost:27017/cloud_notebook"
+const mongoURI = "mongodb+srv://himanshuv242:Job%401215225@icloudbook.jl6a7z7.mongodb.net/?retryWrites=true&w=majority"
 
 const connectToMongo = () =>{
     mongoose.connect(mongoURI, ()=>{
